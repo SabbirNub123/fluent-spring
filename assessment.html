@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Assessment: 5 skimming and 5 scanning questions with automatic scoring and explanations.">
+  <title>Review and Assessment – FluentSpring</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="assessment">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="stage-badge">Stage 5 of 6 · Review and assessment</span>
+        <h1>Review and Assessment</h1>
+        <p>Two short texts and ten questions. Skim the first text for the main ideas. Scan the second text for details. Answer every question, then submit.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stack">
+        <h2 class="section-title">Part 1: Skimming (questions 1–5)</h2>
+        <article class="passage">
+          <h3>Handwriting or Typing: Which Is Better for Lecture Notes?</h3>
+          <p>Many university students now bring laptops to lectures, but some teachers still ask them to write notes by hand. So which method is better? The answer depends on what the student wants to achieve.</p>
+          <p>Typing is fast. Students can record almost every word the lecturer says and can search their notes later. However, this speed can become a problem, because students may copy sentences without thinking about their meaning.</p>
+          <p>Handwriting is slower, so students must choose the most important ideas and put them in their own words. This process can help them understand and remember the lesson. On the other hand, handwritten notes are harder to search and to share.</p>
+          <p>In conclusion, neither method is always best. Students who want a complete record may prefer typing, while those who want deeper understanding may choose handwriting. The best choice is the one that matches the learning goal.</p>
+        </article>
+        <div id="skimAssess"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stack">
+        <h2 class="section-title">Part 2: Scanning (questions 6–10)</h2>
+        <article class="passage">
+          <h3>Final-Year Project Presentations</h3>
+          <p>The Department of English at Sundarban Technical University will hold final-year project presentations on Wednesday, 21 April 2027, in Room 405, Academic Building 1. Presentations begin at 9:30 a.m. Each group has 12 minutes to present and 5 minutes for questions. The event coordinator is Ms. Tahmina Sultana.</p>
+          <p>Groups must upload their slides to the department's shared folder by 18 April. A total of 24 groups will present, and the panel will be led by Professor Anwar Hossain. Students who need technical help should contact Mr. Kamal Uddin in the IT Office (Room 110).</p>
+          <p class="passage-note">Sundarban Technical University and all people and events in this notice are fictional examples created for this lesson.</p>
+        </article>
+        <div id="scanAssess"></div>
+
+        <p id="assessMessage" class="feedback info" hidden></p>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="submitAssessment" type="button">Submit Answers</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resultsSection" hidden>
+      <div class="container stack">
+        <article class="card score-card" aria-live="polite">
+          <h2>Your result</h2>
+          <p class="score-big" id="scoreBig"></p>
+          <p id="levelText"></p>
+          <div class="meter" role="presentation"><span id="scoreBar"></span></div>
+          <div class="score-grid">
+            <div class="score-part"><strong>Skimming</strong><p id="skimScore"></p></div>
+            <div class="score-part"><strong>Scanning</strong><p id="scanScore"></p></div>
+          </div>
+          <p>Scroll up to read the ✔ and ✘ explanation under each question.</p>
+          <div class="btn-row center">
+            <button class="btn btn-secondary" id="retryAssessment" type="button">Try again</button>
+            <a class="btn btn-primary" href="feedback.html">Next: Feedback and Revision</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/assessment.js"></script>
+</body>
+</html>

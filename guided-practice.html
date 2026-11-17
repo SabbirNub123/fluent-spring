@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guided practice: follow five steps to skim and scan a short passage, with hints and explanations.">
+  <title>Guided Practice – FluentSpring</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="practice">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="stage-badge">Stage 3 of 6 · Guided practice</span>
+        <h1>Guided Practice</h1>
+        <p>Work through five steps on one passage. Use the hints if you are unsure. Each step gives you an explanation.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="sticky">
+          <article class="passage" id="practicePassage">
+            <h3 data-part="title">A New Study Hub for Students</h3>
+            <p><span data-part="first">Eastern Delta University opened a new Study Hub in Block C on 3 August 2026.</span> The hub gives students a quiet place to read, write and work in groups.</p>
+            <p>The hub has 80 seats, 12 computers and two group-study rooms. It is open from 8:00 a.m. to 9:00 p.m., Sunday to Thursday. Mr. Rashed Karim, the senior librarian, manages the hub and answers students' questions at the front desk.</p>
+            <p>Students say the hub is especially useful during exam weeks, when the main library is often full. To book a group-study room, students must show their university ID card at the front desk.</p>
+            <p data-part="last">In short, the Study Hub gives students a comfortable and organised space for independent and group learning.</p>
+            <p class="passage-note">Eastern Delta University is a fictional university created for this lesson.</p>
+          </article>
+          <div class="toggle-row">
+            <button type="button" class="toggle-btn" id="toggleTitle" aria-pressed="false">Highlight title</button>
+            <button type="button" class="toggle-btn" id="toggleEnds" aria-pressed="false">Highlight first and last sentences</button>
+          </div>
+        </div>
+
+        <div class="stack">
+          <p id="practiceProgress" class="feedback info" aria-live="polite">Steps checked: 0 of 5</p>
+
+          <section class="card step" id="step1-card">
+            <div class="step-num" aria-hidden="true">1</div>
+            <div><h3>Read the title</h3><p>Look only at the title of the passage. Predict what it is about.</p><div id="step1"></div><button class="btn btn-primary btn-small" type="button" data-check="0">Check step 1</button></div>
+          </section>
+          <section class="card step" id="step2-card">
+            <div class="step-num" aria-hidden="true">2</div>
+            <div><h3>Look at the first and last sentences</h3><p>Use the highlight button, then compare the two sentences.</p><div id="step2"></div><button class="btn btn-primary btn-small" type="button" data-check="1">Check step 2</button></div>
+          </section>
+          <section class="card step" id="step3-card">
+            <div class="step-num" aria-hidden="true">3</div>
+            <div><h3>Identify the general idea</h3><p>Now decide what the passage is mainly about.</p><div id="step3"></div><button class="btn btn-primary btn-small" type="button" data-check="2">Check step 3</button></div>
+          </section>
+          <section class="card step" id="step4-card">
+            <div class="step-num" aria-hidden="true">4</div>
+            <div><h3>Search for a specific name</h3><p>Switch to scanning. Move your eyes over the passage and look for a name.</p><div id="step4"></div><button class="btn btn-primary btn-small" type="button" data-check="3">Check step 4</button></div>
+          </section>
+          <section class="card step" id="step5-card">
+            <div class="step-num" aria-hidden="true">5</div>
+            <div><h3>Answer the questions</h3><p>Choose the right technique for each question, then answer.</p><div id="step5"></div><button class="btn btn-primary btn-small" type="button" data-check="4">Check step 5</button></div>
+          </section>
+
+          <div id="practiceDone" class="callout blue" hidden>
+            <p><strong>Well done.</strong> You have finished the guided practice. Now try the main activity on your own.</p>
+            <div class="btn-row"><a class="btn btn-primary" href="main-activity.html">Next: Main Activity</a>
+            <button class="btn btn-secondary" type="button" id="restartPractice">Start again</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/practice.js"></script>
+</body>
+</html>

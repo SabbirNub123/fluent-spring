@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn skimming and scanning: definitions, purposes, steps, examples and interactive demos.">
+  <title>Learn the Techniques – FluentSpring</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="techniques">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="stage-badge">Stage 2 of 6 · Delivery, modelling and input</span>
+        <h1>Learn the Techniques</h1>
+        <p>Two techniques, two purposes. Read each part, then use the buttons to see the technique working on a real text.</p>
+      </div>
+    </section>
+
+    <section class="section" id="part-a">
+      <div class="container stack">
+        <h2 class="section-title">Part A: Skimming</h2>
+        <div class="card-grid">
+          <article class="card card-accent-blue"><h3>Definition</h3><p>Reading a text quickly to understand its <strong>general idea or main message</strong>.</p></article>
+          <article class="card card-accent-blue"><h3>Purpose</h3><p>To decide what a text is about and whether it is useful, without reading every word.</p></article>
+          <article class="card card-accent-blue"><h3>When to use it</h3>
+            <ul class="steps-list"><li>Choosing which article to read for an assignment</li><li>Previewing a chapter before a lecture</li><li>Checking what a news report or email is about</li></ul></article>
+          <article class="card card-accent-blue"><h3>How to skim</h3>
+            <ol class="steps-list"><li>Read the <strong>title</strong>.</li><li>Read the <strong>introduction</strong>.</li><li>Read the <strong>headings</strong>.</li><li>Read the <strong>first sentence</strong> of each paragraph.</li><li>Read the <strong>conclusion</strong>.</li></ol></article>
+        </div>
+
+        <article class="card">
+          <h3>Practical example: find the main idea</h3>
+          <p>Press the buttons to highlight the parts a skimmer reads. Notice how much of the text you can ignore.</p>
+          <div class="toggle-row" role="group" aria-label="Skimming highlights">
+            <button type="button" class="toggle-btn" data-skim="title" aria-pressed="false">Title</button>
+            <button type="button" class="toggle-btn" data-skim="intro" aria-pressed="false">Introduction</button>
+            <button type="button" class="toggle-btn" data-skim="heading" aria-pressed="false">Headings</button>
+            <button type="button" class="toggle-btn" data-skim="first" aria-pressed="false">First sentences</button>
+            <button type="button" class="toggle-btn" data-skim="conclusion" aria-pressed="false">Conclusion</button>
+            <button type="button" class="toggle-btn" id="skimAll">Show all</button>
+            <button type="button" class="toggle-btn" id="skimClear">Clear</button>
+          </div>
+          <article class="demo-text" id="skimDemo" aria-label="Sample article for skimming">
+            <h4 data-part="title">Why Group Study Helps University Students</h4>
+            <p data-part="intro">Many students prefer to study alone, but many teachers believe that studying with classmates has real advantages. This article explains three of them.</p>
+            <h5 data-part="heading">1. Sharing ideas</h5>
+            <p><span data-part="first">When students discuss a topic, they hear explanations they would not think of alone.</span> This helps them notice details they may have missed while reading.</p>
+            <h5 data-part="heading">2. Staying motivated</h5>
+            <p><span data-part="first">Group study makes it easier to keep a regular study routine.</span> Friends remind each other about deadlines and encourage each other when a subject feels difficult.</p>
+            <h5 data-part="heading">3. Learning by explaining</h5>
+            <p><span data-part="first">Explaining a difficult idea to a classmate is a powerful way to test your own understanding.</span> If you cannot explain it clearly, you know what to review.</p>
+            <p data-part="conclusion">In conclusion, group study is not a replacement for individual reading, but it is a useful addition that can improve understanding and motivation.</p>
+          </article>
+          <div class="callout blue">
+            <p><strong>Model answer.</strong> Reading only the highlighted parts, we learn the main idea: <em>group study has several benefits for students (sharing ideas, motivation and learning by explaining).</em> We did not need the supporting details to find it.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="part-b">
+      <div class="container stack">
+        <h2 class="section-title">Part B: Scanning</h2>
+        <div class="card-grid">
+          <article class="card card-accent-purple"><h3>Definition</h3><p>Looking through a text quickly to <strong>locate specific information</strong> such as names, dates, numbers, places or keywords.</p></article>
+          <article class="card card-accent-purple"><h3>Purpose</h3><p>To find one exact answer fast, without reading the rest of the text.</p></article>
+          <article class="card card-accent-purple"><h3>When to use it</h3>
+            <ul class="steps-list"><li>Finding an exam date on a notice</li><li>Looking for a phone number or room number</li><li>Checking a name or a statistic in an article</li></ul></article>
+          <article class="card card-accent-purple"><h3>How to scan</h3>
+            <ol class="steps-list"><li>Decide <strong>exactly what</strong> you need (a date? a name?).</li><li>Think about <strong>how it looks</strong>: digits, capital letters, month names.</li><li>Move your eyes quickly over the text.</li><li>When you find it, <strong>read the words around it</strong> to confirm.</li><li>Stop. Do not read the rest.</li></ol></article>
+        </div>
+
+        <article class="card">
+          <h3>Practical example: search for specific information</h3>
+          <p>Choose a type of information to highlight. Names and places often start with capital letters. Dates and numbers contain digits.</p>
+          <div class="toggle-row" role="group" aria-label="Scanning highlights">
+            <button type="button" class="toggle-btn" data-scan="name" aria-pressed="false">Names</button>
+            <button type="button" class="toggle-btn" data-scan="date" aria-pressed="false">Dates</button>
+            <button type="button" class="toggle-btn" data-scan="number" aria-pressed="false">Numbers</button>
+            <button type="button" class="toggle-btn" data-scan="place" aria-pressed="false">Places</button>
+            <button type="button" class="toggle-btn" data-scan="keyword" aria-pressed="false">Keywords</button>
+            <button type="button" class="toggle-btn" id="scanClear">Clear</button>
+          </div>
+          <article class="demo-text" id="scanDemo" aria-label="Sample notice for scanning">
+            <h4>Notice: Public Speaking Workshop</h4>
+            <p>The English Debate Club of Karnaphuli City University will hold a public speaking workshop on <span data-type="date">25 April 2027</span> in <span data-type="place">Seminar Room 3, Block B</span>. The trainer, <span data-type="name">Ms. Farhana Akter</span>, will lead the session from <span data-type="number">10:00 a.m.</span> to <span data-type="number">12:30 p.m.</span> Only <span data-type="number">40</span> seats are available, so students must <span data-type="keyword">register</span> at the club office by <span data-type="date">20 April</span>.</p>
+            <p class="passage-note">Karnaphuli City University is a fictional university created for this lesson.</p>
+          </article>
+          <div class="callout">
+            <p><strong>Model thinking.</strong> Question: <em>When is the workshop?</em> I need a date. I scan for numbers and month names and find two: 25 April 2027 and 20 April. I read the words around each one. "Hold a workshop on 25 April 2027" answers my question. 20 April is the registration deadline, so it is a distractor.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="container stack">
+        <h2 class="section-title">Skimming and scanning compared</h2>
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead><tr><th scope="col">Skimming</th><th scope="col">Scanning</th></tr></thead>
+            <tbody>
+              <tr><td>Reading for general meaning</td><td>Searching for specific information</td></tr>
+              <tr><td>Finding the main idea</td><td>Finding particular details</td></tr>
+              <tr><td>Reading selected parts</td><td>Looking for keywords</td></tr>
+              <tr><td>Example question: What is this text mainly about?</td><td>Example question: When does the workshop start?</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quick-check">
+      <div class="container">
+        <h2 class="section-title">Quick check: skimming or scanning?</h2>
+        <p class="section-lead">Which technique is best for each situation?</p>
+        <div id="techniqueQuestions"></div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="checkTechniques" type="button">Check Answers</button>
+          <button class="btn btn-secondary" id="retryTechniques" type="button" hidden>Try again</button>
+        </div>
+        <p id="techniqueMessage" class="feedback info" hidden></p>
+        <div class="btn-row" id="techniqueNext" hidden>
+          <a class="btn btn-primary" href="guided-practice.html">Next: Guided Practice</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/techniques.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Main activity: skimming and scanning challenges on the passage University Reading Week.">
+  <title>Main Activity – FluentSpring</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="main">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="stage-badge">Stage 4 of 6 · Main task</span>
+        <h1>Main Activity: University Reading Week</h1>
+        <p>Read the passage, then complete two challenges. Skim first for the big picture, then scan for details. Understanding matters more than speed.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="sticky">
+          <article class="passage">
+            <h3>University Reading Week</h3>
+            <p>Meghna Valley University will hold its first University Reading Week from 14 to 18 March 2027. The event aims to help students build a regular reading habit and improve the academic reading skills they need for their courses.</p>
+            <p>The opening ceremony will take place on Sunday, 14 March, in the Central Library Auditorium on the second floor of Academic Building 2. More than 450 students from six departments have already registered. Registration closes on 7 March.</p>
+            <p>The programme is organised by Dr. Nusrat Jahan of the Department of English. She says that many first-year students find long academic texts difficult because they read every word at the same speed. "Students need practical strategies," she explains. During the week, students will attend three workshops on skimming, scanning and note-taking. Librarian Mr. Imran Hossain will also show students how to find journal articles in the university e-library.</p>
+            <p>At the end of the week, participants will complete a short reading quiz, and the best-performing group will receive a book voucher. The organisers hope the event will become an annual tradition.</p>
+            <p class="passage-note">Meghna Valley University and all people and events in this passage are fictional examples created for this lesson.</p>
+          </article>
+        </div>
+
+        <div class="stack">
+          <section class="card card-accent-blue" id="activityA">
+            <h2>Activity A: Skimming Challenge</h2>
+            <p>Do not hunt for small details. Think about the whole passage.</p>
+            <div id="skimQuestions"></div>
+            <button class="btn btn-primary" id="checkSkim" type="button">Check Activity A</button>
+            <p id="skimMessage" class="feedback info" hidden></p>
+          </section>
+
+          <section class="card card-accent-purple" id="activityB">
+            <h2>Activity B: Scanning Challenge</h2>
+            <p>Find the exact information. Type a short answer.</p>
+            <div class="timer-box">
+              <span>Optional timer:</span>
+              <span class="timer-display" id="timerDisplay" aria-live="off">00:00</span>
+              <button class="btn btn-secondary btn-small" type="button" id="timerStart">Start</button>
+              <button class="btn btn-secondary btn-small" type="button" id="timerStop">Pause</button>
+              <button class="btn btn-secondary btn-small" type="button" id="timerReset">Reset</button>
+            </div>
+            <p class="passage-note">The timer is only for self-awareness. A correct answer is always better than a fast wrong one.</p>
+            <div id="scanQuestions"></div>
+            <button class="btn btn-primary" id="checkScan" type="button">Check Activity B</button>
+            <p id="scanMessage" class="feedback info" hidden></p>
+          </section>
+
+          <section class="callout blue" id="mainDone" hidden>
+            <p id="mainSummary"></p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="assessment.html">Next: Review and Assessment</a>
+              <button class="btn btn-secondary" id="retryMain" type="button">Try both activities again</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/main-activity.js"></script>
+</body>
+</html>

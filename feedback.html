@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Feedback and revision: review your assessment, practise again with a second reading, and write a reflection.">
+  <title>Feedback and Revision – FluentSpring</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="feedback">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <span class="stage-badge">Stage 6 of 6 · Feedback and revision</span>
+        <h1>Feedback and Revision</h1>
+        <p>Look at your results, understand your mistakes, then apply what you learned to a new reading passage.</p>
+      </div>
+    </section>
+
+    <section class="section" id="resultSection">
+      <div class="container stack">
+        <h2 class="section-title">1. Your initial assessment result</h2>
+        <div id="noAssessment" class="callout" hidden>
+          <p>No assessment result was found on this device. Complete the assessment first to see personal feedback. You can still try the revision exercise below.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="assessment.html">Go to the assessment</a></div>
+        </div>
+        <article class="card score-card" id="summaryCard" hidden>
+          <p class="score-big" id="fbScore"></p>
+          <div class="meter" role="presentation"><span id="fbBar"></span></div>
+          <div class="score-grid">
+            <div class="score-part"><strong>Skimming</strong><p id="fbSkim"></p></div>
+            <div class="score-part"><strong>Scanning</strong><p id="fbScan"></p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="reviewSection" hidden>
+      <div class="container stack">
+        <h2 class="section-title">2. Correct answers and explanations</h2>
+        <div class="toggle-row" role="group" aria-label="Filter answers">
+          <button type="button" class="toggle-btn" id="showAll" aria-pressed="true">All answers</button>
+          <button type="button" class="toggle-btn" id="showWrong" aria-pressed="false">Only incorrect answers</button>
+        </div>
+        <div id="reviewList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="improveSection" hidden>
+      <div class="container stack">
+        <h2 class="section-title">3. Areas to improve</h2>
+        <div id="improveList" class="card-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="revisionSection">
+      <div class="container stack">
+        <h2 class="section-title">4. Revision exercise: apply your feedback</h2>
+        <p class="section-lead">Here is a new passage. Before you answer, remember your improvement tips. Skim for the big picture, scan for the details.</p>
+        <div class="split">
+          <article class="passage sticky">
+            <h3>Green Campus Day</h3>
+            <p>Haor Valley University will celebrate its first Green Campus Day on Thursday, 3 June 2027. The day aims to encourage students and staff to take better care of the campus environment.</p>
+            <p>The programme starts at 8:30 a.m. at the Main Gate Field, where volunteers will plant 300 trees. After that, students will join a waste-sorting workshop in Lecture Hall 2. The workshop will be led by Ms. Sabrina Chowdhury, an environmental science lecturer.</p>
+            <p>The student club Green Hands is organising the event with help from the Registrar's Office. Club president Arif Mahmud says, "We want every student to feel responsible for the campus." Students who want to volunteer should register online by 28 May.</p>
+            <p>Overall, Green Campus Day is designed to turn small daily actions into lasting habits.</p>
+            <p class="passage-note">Haor Valley University and all people and events in this passage are fictional examples created for this lesson.</p>
+          </article>
+          <div>
+            <div id="revisionQuestions"></div>
+            <div class="btn-row">
+              <button class="btn btn-primary" id="checkRevision" type="button">Check my revision</button>
+              <button class="btn btn-secondary" id="retryRevision" type="button">Retry Activity</button>
+            </div>
+            <p id="revisionMessage" class="feedback info" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reflectionSection">
+      <div class="container stack">
+        <h2 class="section-title">5. Reflection</h2>
+        <article class="card">
+          <label for="reflectionText"><strong>What did you learn from this activity, and which reading technique do you need to practise more?</strong></label>
+          <p class="passage-note">Write at least two sentences (20 characters or more). Your reflection is saved only on this device.</p>
+          <textarea id="reflectionText" maxlength="1200" placeholder="Write your reflection here…"></textarea>
+          <p class="passage-note" id="reflectionCount">0 / 1200 characters</p>
+          <div class="btn-row">
+            <button class="btn btn-primary" id="saveReflection" type="button">Save reflection</button>
+            <button class="btn btn-secondary" id="downloadRecord" type="button">Download my learning record</button>
+          </div>
+          <p id="reflectionMessage" class="feedback info" hidden></p>
+        </article>
+        <div class="callout blue">
+          <p><strong>Next steps.</strong> Share your learning record with your teacher. You can <a href="assessment.html">retake the assessment</a> or revisit the <a href="techniques.html">techniques</a> at any time.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
